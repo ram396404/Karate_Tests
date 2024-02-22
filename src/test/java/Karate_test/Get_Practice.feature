@@ -3,7 +3,6 @@ Feature:Automation test for GET
   Background:
     * url baseURL
 
-
   Scenario Outline: Parameterized URL test for comments with Post ID = 1 and ID = (1,2 and 3)
     * def response1 =
     """
