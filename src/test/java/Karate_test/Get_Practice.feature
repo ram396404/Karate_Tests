@@ -98,4 +98,3 @@ Feature:Automation test for GET
       | 1          | response1        |
       | 2          | response2        |
       | 3          | response3        |
-
