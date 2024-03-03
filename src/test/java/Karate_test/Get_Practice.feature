@@ -3,6 +3,7 @@ Feature:Automation test for GET
   Background:
     * url baseURL
 
+    @GetforPostID1
   Scenario Outline: Parameterized URL test for comments with Post ID = 1 and ID = (1,2 and 3)
     * def response1 =
     """
@@ -56,6 +57,7 @@ Feature:Automation test for GET
       | 1      | 3  | response3        |
 
 
+      @GetforPosts123
   Scenario Outline: Parameterized URL test for Posts with Posts = (1,2 and 3)
     * def response1 =
     """

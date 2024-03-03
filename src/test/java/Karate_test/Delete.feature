@@ -3,7 +3,8 @@ Feature:Automation test for POST
   Background:
     * url baseURL
 
-  Scenario: Passing data using POST method for Test URL and validating Response code and JSON Response
+    @Delete
+  Scenario: Test DELETE method for Test URL and validating Response code and JSON Response
 
     * def req =
       """
@@ -16,16 +17,12 @@ Feature:Automation test for POST
     * def res =
       """
       {
-      "title": "foo",
-      "body": "bar",
-      "userId": 1,
-      "id": 101
       }
       """
-    Given path 'posts'
+    Given path 'posts/1'
     And header Content-Type = 'application/json; Accept-Charset=UTF-8'
     And request req
-    When method POST
-    Then status 201
+    When method DELETE
+    Then status 200
     And print response
     And match response == res
