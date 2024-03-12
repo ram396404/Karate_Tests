@@ -16,6 +16,15 @@ dependencies {
     implementation "com.intuit.karate:karate-junit5:1.4.1"
 }
 
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
 }

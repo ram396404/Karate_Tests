@@ -1,4 +1,4 @@
-package org.example.javautils;
+package org.example.utils;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

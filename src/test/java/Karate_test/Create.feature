@@ -1,8 +1,8 @@
+  @full
 Feature:Automation test for POST
 
   Background:
     * url baseURL
-    * def javaUtilss = Java.type('org.example.javautils.JavaUtils')
 
   Scenario: Passing data using POST method for Test URL and validating Response code and JSON Response
 
@@ -47,15 +47,15 @@ Feature:Automation test for POST
 
   Scenario: Passing random values from Utility
 
-    * def javaUtils = Java.type('file:src.main.java.org.example.javautils.JavaUtils')
-    * def randomUserID = javautils.getRandomDigit()
+    * def javaUtils = Java.type('org.example.utils.JavaUtils')
+    * def randomUserID = javaUtils.getRandomDigit()
     * print randomUserID
     * def req =
       """
      {
       "title": "foo",
       "body": "bar",
-      "userId": "#randomUserID",
+      "userId": "#(randomUserID)",
      }
       """
     * def res =
