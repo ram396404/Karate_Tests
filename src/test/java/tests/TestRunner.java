@@ -1,8 +1,8 @@
-package Karate_test;
+package tests;
 
 import com.intuit.karate.junit5.Karate;
 
-public class karateRunner {
+public class TestRunner {
     @Karate.Test
     Karate runSequential() {
         return Karate.run(
