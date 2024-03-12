@@ -1,4 +1,4 @@
-  @full
+  @CreateAll
 Feature:Automation test for POST
 
   Background:

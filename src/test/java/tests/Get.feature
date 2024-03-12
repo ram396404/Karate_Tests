@@ -1,3 +1,4 @@
+  @GetAll
 Feature:Automation test for GET
 
   Background:

@@ -1,3 +1,4 @@
+  @DeleteAll
 Feature:Automation test for POST
 
   Background:

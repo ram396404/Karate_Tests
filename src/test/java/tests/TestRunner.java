@@ -8,7 +8,7 @@ public class TestRunner {
         return Karate.run(
 
                 )
-                .tags("@full")
+                .tags("@CreateAll", "@GetAll", "@DeleteAll", "@E2E")
                 .relativeTo(getClass());
     }
 }
