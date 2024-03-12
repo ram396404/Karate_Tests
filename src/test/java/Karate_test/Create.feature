@@ -47,8 +47,9 @@ Feature:Automation test for POST
 
   Scenario: Passing random values from Utility
 
-    * def javaUtilss = Java.type('org.example.javautils.JavaUtils')
-    * def randomUserID = getRandomDigit()
+    * def javaUtils = Java.type('file:src.main.java.org.example.javautils.JavaUtils')
+    * def randomUserID = javautils.getRandomDigit()
+    * print randomUserID
     * def req =
       """
      {
