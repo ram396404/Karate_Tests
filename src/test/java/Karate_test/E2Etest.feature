@@ -5,6 +5,6 @@ Feature:Automation test for End to End scenarios
 
   Scenario: Create, GET, Delete - In One Feature File
 
-    * def result = call read('file:/Users/396404/IdeaProjects/Karate_Practice_Tests/src/test/java/Karate_test/Create1.feature')
-    * def result = call read('file:/Users/396404/IdeaProjects/Karate_Practice_Tests/src/test/java/Karate_test/Get_Practice.feature')
-    * def result = call read('file:/Users/396404/IdeaProjects/Karate_Practice_Tests/src/test/java/Karate_test/Delete.feature')
+    * def result = call read('Create.feature@Create')
+    * def result = call read('Get.feature@GetforPostID1')
+    * def result = call read('Delete.feature@Delete')

@@ -57,7 +57,7 @@ Feature:Automation test for GET
       | 1      | 3  | response3        |
 
 
-      @GetforPosts123
+  @GetforPosts123
   Scenario Outline: Parameterized URL test for Posts with Posts = (1,2 and 3)
     * def response1 =
     """
