@@ -31,7 +31,7 @@ Feature:Automation test for POST
     And print response
     And match response == res
 
-  @Create
+  @CreateUsingFile
   Scenario: Passing data using POST method for Test URL and validating Response code and JSON Response
 
     * def requestBody = read('file:src/test/resources/create/request.json')
@@ -39,12 +39,14 @@ Feature:Automation test for POST
     Given path 'posts'
     And header Content-Type = 'application/json; Accept-Charset=UTF-8'
     And request requestBody
+    * remove requestBody.newKey
+    And print requestBody
     When method POST
     Then status 201
     And print response
     And match response == responseBody
 
-
+  @CreateUsingRandomvalue
   Scenario: Passing random values from Utility
 
     * def javaUtils = Java.type('org.example.utils.JavaUtils')
@@ -76,7 +78,7 @@ Feature:Automation test for POST
     And match response == res
 
 
-  @Create
+  @CreateUpdatingJSON
   Scenario: Passing data from resources JSON file and updating JSON as needed
 
     * def requestBody = read('file:src/test/resources/create/request.json')

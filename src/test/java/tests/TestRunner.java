@@ -12,6 +12,3 @@ public class TestRunner {
                 .relativeTo(getClass());
     }
 }
-
-
-

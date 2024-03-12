@@ -3,7 +3,7 @@ Feature:Automation test for POST
   Background:
     * url baseURL
 
-    @Create
+  @Create
   Scenario: Passing data using POST method for Test URL and validating Response code and JSON Response
 
     * def requestBody = read('file:/Users/396404/IdeaProjects/Karate_Practice_Tests/src/test/resources/create/request.json')
