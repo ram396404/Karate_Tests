@@ -57,7 +57,7 @@ Feature:Automation test for POST
      {
       "title": "foo",
       "body": "bar",
-      "userId": "#(randomUserID)",
+      "userId": "#(1*randomUserID)",
      }
       """
     * def res =
@@ -72,6 +72,7 @@ Feature:Automation test for POST
     Given path 'posts'
     And header Content-Type = 'application/json; Accept-Charset=UTF-8'
     And request req
+    And print req
     When method POST
     Then status 201
     And print response
