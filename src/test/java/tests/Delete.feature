@@ -1,5 +1,5 @@
-  @DeleteAll
-Feature:Automation test for POST
+  @Full
+Feature:Automation test for Delete
 
   Background:
     * url baseURL
@@ -8,17 +8,17 @@ Feature:Automation test for POST
   Scenario: Test DELETE method for Test URL and validating Response code and JSON Response
 
     * def req =
-      """
-     {
+"""
+   {
       "title": "foo",
       "body": "bar",
       "userId": 1
-     }
-      """
+   }
+"""
     * def res =
-      """
-     {
-     }
+"""
+   {
+   }
       """
     Given path 'posts/1'
     And header Content-Type = 'application/json; Accept-Charset=UTF-8'

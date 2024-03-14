@@ -1,6 +1,5 @@
-{
-  "title": "foo",
-  "body": "bar",
-  "userId": 1,
-  "newKey": "New Value"
-}
+  {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  }

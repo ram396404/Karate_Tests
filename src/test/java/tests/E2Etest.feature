@@ -1,4 +1,4 @@
-  @E2E
+  @Full
 Feature:Automation test for End to End scenarios
 
   Background:
@@ -6,6 +6,6 @@ Feature:Automation test for End to End scenarios
 
   Scenario: Create, GET, Delete - In One Feature File
 
-    * def result = call read('Create.feature@CreateUsingFile')
-    * def result = call read('Get.feature@GetAll')
-    * def result = call read('Delete.feature@DeleteAll')
+    * def result = call read('Create.feature@Full')
+    * def result = call read('Get.feature@Full')
+    * def result = call read('Delete.feature@Full')
