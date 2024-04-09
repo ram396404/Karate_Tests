@@ -1,10 +1,10 @@
-  @Full
+@Full
 Feature:Automation test for GET
 
   Background:
     * url baseURL
 
-    @GetforPostID1
+  @GetforPostID1
   Scenario Outline: Parameterized URL test for comments with Post ID = 1 and ID = (1,2 and 3)
     * def response1 =
 """

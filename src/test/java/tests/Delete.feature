@@ -1,4 +1,4 @@
-  @Full
+@Full
 Feature:Automation test for Delete
 
   Background:

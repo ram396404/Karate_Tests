@@ -1,4 +1,4 @@
-  @Full
+@Full
 Feature:Automation test for POST
 
   Background:
@@ -71,7 +71,6 @@ Feature:Automation test for POST
     Given path 'posts'
     And header Content-Type = 'application/json; Accept-Charset=UTF-8'
     And request req
-    And print req
     When method POST
     Then status 201
     And print response
